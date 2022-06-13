@@ -33,11 +33,6 @@ public class DiffractionPanel extends JPanel {
 	XrdManager xrd;
 
 	public DiffractionPanel() {
-		
-	}
-	
-	public void generatePanel() {
-		
 		titleLabel = new JLabel("DIFFRACTION PATTERN");
 		titleLabel.setFont(new Font("Cambria", Font.BOLD, 14));
 		
@@ -89,6 +84,11 @@ public class DiffractionPanel extends JPanel {
 		anglePanel.add(generateButton);
 		this.add(anglePanel, BorderLayout.CENTER);
 		this.setBorder(new SoftBevelBorder(WIDTH, Color.black, Color.black));
+	}
+	
+	public void generatePanel() {
+		
+		
 		
 		
 		ActionListener genButList = new ActionListener() {
